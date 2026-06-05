@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>TOEFL ITP Practice</h1>
-    <button>Start Test</button>
+
+    <router-link to="/reading">
+      <button>Start Test</button>
+    </router-link>
   </div>
 </template>

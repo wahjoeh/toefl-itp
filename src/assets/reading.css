@@ -1,0 +1,118 @@
+.exam-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 280px;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar-title {
+  margin-bottom: 20px;
+}
+
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.question-btn {
+  height: 45px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.active-question {
+  background: #2563eb;
+  color: white;
+}
+
+.answered-question {
+  background: #22c55e;
+  color: white;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.question-title {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.option {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.score-box {
+  margin-top: 40px;
+  padding: 20px;
+  background: #dcfce7;
+  border-radius: 10px;
+}
+
+/* TIMER */
+
+.timer-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  background: #2563eb;
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  z-index: 999;
+}

@@ -1,0 +1,64 @@
+.result-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f7fb;
+}
+
+.result-card {
+  background: white;
+
+  width: 450px;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 25px auto;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.home-btn {
+  margin-top: 30px;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
