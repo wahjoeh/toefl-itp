@@ -257,7 +257,7 @@ const submitTest = () => {
       <div>
 
         <h1 class="header-title">
-          Structure & Written Expression Section
+          Structure & Written Expression
         </h1>
 
         <p class="header-subtitle">
