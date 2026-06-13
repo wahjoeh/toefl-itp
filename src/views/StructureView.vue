@@ -174,28 +174,31 @@ const goToQuestion = index => {
 
 const submitTest = () => {
 
-    let correct = 0
+  let correct = 0
 
-    questions.forEach(
-      question => {
+  questions.forEach(
+    question => {
 
-        if (
-          answers.value[
-            question.id
-          ] ===
-          question.answer
-        ) {
+      if (
+        answers.value[
+          question.id
+        ] ===
+        question.answer
+      ) {
 
-          correct++
-
-        }
+        correct++
 
       }
-    )
 
-    clearInterval(timer)
+    }
+  )
 
-    if (route.query.fullTest) {
+  const convertedScore =
+    convertStructureScore(correct)
+
+  clearInterval(timer)
+
+  if (route.query.fullTest) {
 
     sessionStorage.setItem(
       'fullStructureCorrect',
@@ -232,6 +235,7 @@ const submitTest = () => {
   }
 
 }
+
 </script>
 
 <template>

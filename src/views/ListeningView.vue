@@ -216,31 +216,34 @@ const router = useRouter()
 
 const submitTest = () => {
 
-    let correct = 0
+  let correct = 0
 
-    questions.forEach(question => {
+  questions.forEach(question => {
 
-      if (
-        answers.value[question.id] ===
-        question.answer
-      ) {
-        correct++
-      }
+    if (
+      answers.value[question.id] ===
+      question.answer
+    ) {
+      correct++
+    }
 
-    })
+  })
 
-if (route.query.fullTest) {
+  const convertedScore =
+    convertListeningScore(correct)
 
-  sessionStorage.setItem(
-    'fullListeningCorrect',
-    correct
-  )
+  if (route.query.fullTest) {
 
-}
+    sessionStorage.setItem(
+      'fullListeningCorrect',
+      correct
+    )
 
-    clearInterval(timer)
+  }
 
-    if (route.query.fullTest) {
+  clearInterval(timer)
+
+  if (route.query.fullTest) {
 
     router.push(
       `/structure/${route.params.packageId}?fullTest=true`
@@ -251,21 +254,15 @@ if (route.query.fullTest) {
     router.push({
       path: '/result',
       query: {
-
         section: 'listening',
-
         correct,
-
-        total:
-          questions.length,
-
-        converted:
-          convertedScore
-
+        total: questions.length,
+        converted: convertedScore
       }
     })
 
   }
+
 }
 
 </script>

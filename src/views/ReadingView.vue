@@ -149,47 +149,47 @@ const goToQuestion = index => {
 }
 
 const submitTest = () => {
-    let correct = 0
 
-    questions.forEach(question => {
-      if (
-        answers.value[question.id] ===
-        question.answer
-      ) {
-        correct++
-      }
-    })
+  let correct = 0
 
-    clearInterval(timer)
+  questions.forEach(question => {
+    if (
+      answers.value[question.id] ===
+      question.answer
+    ) {
+      correct++
+    }
+  })
 
-  if (route.query.fullTest) {
+  const convertedScore =
+    convertReadingScore(correct)
 
-  sessionStorage.setItem(
-    'fullReadingCorrect',
-    correct
-  )
-
-  }
+  clearInterval(timer)
 
   if (route.query.fullTest) {
+
+    sessionStorage.setItem(
+      'fullReadingCorrect',
+      correct
+    )
 
     router.push('/full-result')
 
   } else {
 
     router.push({
-      path:'/result',
-      query:{
+      path: '/result',
+      query: {
 
-      section:'reading',
+        section: 'reading',
 
-      correct,
+        correct,
 
-      total:
-        questions.length,
+        total:
+          questions.length,
 
-      converted:
-        convertedScore
+        converted:
+          convertedScore
 
       }
     })
