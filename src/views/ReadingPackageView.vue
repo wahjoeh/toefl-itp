@@ -41,11 +41,11 @@ const openPackage = packageId => {
       <div>
 
         <h1 class="header-title">
-          Ujian CBT
+          Reading Section
         </h1>
 
         <p class="header-subtitle">
-          TOEFL ITP Reading Packages
+          TEP Exercise Online
         </p>
 
       </div>

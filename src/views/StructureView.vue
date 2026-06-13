@@ -253,11 +253,11 @@ const submitTest = () => {
       <div>
 
         <h1 class="header-title">
-          Ujian CBT
+          Structure & Written Expression Section
         </h1>
 
         <p class="header-subtitle">
-          TOEFL ITP Structure & Written Expression
+          TEP Exercise
         </p>
 
       </div>
@@ -271,7 +271,7 @@ const submitTest = () => {
       </div>
 
       <div class="profile-circle">
-        U
+        W
       </div>
 
     </div>

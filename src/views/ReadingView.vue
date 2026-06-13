@@ -217,11 +217,11 @@ const submitTest = () => {
       <div>
 
         <h1 class="header-title">
-          TEP Exercise
+          Reading Section
         </h1>
 
         <p class="header-subtitle">
-          TOEFL ITP Reading Section
+          TEP Exercise Online
         </p>
 
       </div>
@@ -235,7 +235,7 @@ const submitTest = () => {
       </div>
 
       <div class="profile-circle">
-        U
+        W
       </div>
 
     </div>

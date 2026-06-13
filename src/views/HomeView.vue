@@ -22,11 +22,8 @@ const goToFullTest = () => {
 </script>
 
 <template>
-
   <div class="home-container">
-
     <div class="home-card">
-
       <img
         :src="logo"
         alt="Logo"
@@ -46,7 +43,6 @@ const goToFullTest = () => {
       </h2>
 
       <div class="menu-grid">
-
         <button
           class="menu-card"
           @click="goToListening"
@@ -98,13 +94,16 @@ const goToFullTest = () => {
             Full Test
           </span>
         </button>
-
       </div>
 
+      <div class="credit">
+        Made with ❤️ by
+        <strong>@wahjoeh</strong>
+        <br>
+        Open for Collaboration
+      </div>
     </div>
-
   </div>
-
 </template>
 
 <style src="../assets/home.css"></style>

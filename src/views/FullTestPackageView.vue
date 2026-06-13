@@ -31,11 +31,11 @@ const openPackage = packageId => {
 
       <div>
         <h1 class="header-title">
-          TOEFL ITP Simulation
+          Full Simulation
         </h1>
 
         <p class="header-subtitle">
-          Full Test
+          TEP Exercise Online
         </p>
       </div>
     </div>

@@ -45,11 +45,11 @@ const openPackage = packageId => {
       <div>
 
         <h1 class="header-title">
-          Ujian CBT
+          Structure & Written Expression Section
         </h1>
 
         <p class="header-subtitle">
-          TOEFL ITP Structure & Written Expression
+          TEP Exercise Online
         </p>
 
       </div>

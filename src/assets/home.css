@@ -112,3 +112,22 @@
 .menu-icon{
   font-size:40px;
 }
+
+.credit{
+  margin-top: 45px;
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.credit a{
+  color: #5b5ce2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.credit a:hover{
+  opacity: 0.8;
+}

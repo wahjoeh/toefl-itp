@@ -289,11 +289,11 @@ if (route.query.fullTest) {
       <div>
 
         <h1 class="header-title">
-          Ujian CBT
+          Listening Section
         </h1>
 
         <p class="header-subtitle">
-          TOEFL ITP Listening Section
+          TEP Exercise Online
         </p>
 
       </div>
@@ -307,7 +307,7 @@ if (route.query.fullTest) {
       </div>
 
       <div class="profile-circle">
-        U
+        W
       </div>
 
     </div>
