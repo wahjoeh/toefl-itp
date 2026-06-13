@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f4f6fb;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.cbt-header{
+  height:80px;
+  background:white;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 30px;
+
+  border-bottom:1px solid #e5e7eb;
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,.04);
+}
+
+.header-left{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo-image{
+  width:50px;
+  height:50px;
+  object-fit:contain;
+}
+
+.header-title{
+  font-size:26px;
+  font-weight:700;
+  color:#111827;
+}
+
+.header-subtitle{
+  font-size:14px;
+  color:#64748b;
+}
+
+.timer-box{
+  background:#4f46e5;
+  color:white;
+
+  padding:12px 18px;
+
+  border-radius:12px;
+
+  font-weight:600;
+}
+
+.profile-circle{
+  width:44px;
+  height:44px;
+
+  border-radius:50%;
+
+  background:#4f46e5;
+  color:white;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-weight:700;
+}
+
+/* =========================
+   LAYOUT CBT
+========================= */
+
+.exam-container{
+  display:flex;
+  min-height:calc(100vh - 80px);
+}
+
+.sidebar{
+  width:300px;
+
+  background:white;
+
+  padding:30px;
+
+  border-right:
+    1px solid #e5e7eb;
+}
+
+.content{
+  flex:1;
+  padding:30px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar-title{
+  font-size:18px;
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.question-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  gap:7px;
+
+  justify-content:center;
+
+  margin-bottom:10px;
+}
+
+.question-btn{
+  height:44px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#e5e7eb;
+
+  cursor:pointer;
+
+  font-weight:600;
+}
+
+.active-question{
+  background:#4f46e5;
+  color:white;
+}
+
+.answered-question{
+  background:#22c55e;
+  color:white;
+}
+
+.question-legend{
+  margin-bottom:1px;
+}
+
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  margin-bottom:1px;
+}
+
+.legend-box{
+  width:16px;
+  height:16px;
+
+  border-radius:4px;
+}
+
+.legend-box.active{
+  background:#4f46e5;
+}
+
+.legend-box.answered{
+  background:#22c55e;
+}
+
+.legend-box.unanswered{
+  background:#e5e7eb;
+}
+
+.submit-btn{
+  width:100%;
+
+  border:none;
+
+  border-radius:14px;
+
+  padding:16px;
+
+  background:#4f46e5;
+
+  color:white;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+/* =========================
+   QUESTION CARD
+========================= */
+
+.question-card{
+  background:white;
+
+  border-radius:24px;
+
+  padding:30px;
+
+  box-shadow:
+    0 4px 20px rgba(0,0,0,.05);
+}
+
+.question-info{
+  color:#4f46e5;
+
+  font-weight:600;
+
+  margin-bottom:10px;
+}
+
+.question-title{
+
+  font-family:
+    "Times New Roman",
+    serif;
+
+  font-size:32px;
+
+  font-weight:400;
+
+  line-height:1.8;
+
+  color:#111827;
+
+  margin-bottom:15px;
+
+}
+
+/* =========================
+   WRITTEN EXPRESSION
+========================= */
+
+.written-box{
+
+  background:#ffffff;
+
+  border:1px solid #e5e7eb;
+
+  border-radius:18px;
+
+  padding:30px;
+
+  margin-bottom:10px;
+}
+
+.written-text{
+
+  font-family:
+    "Times New Roman",
+    serif;
+
+  font-size:32px;
+
+  line-height:2.1;
+
+  color:#111827;
+}
+
+.written-question{
+
+  font-family:
+    "Times New Roman",
+    serif;
+
+  font-size:32px;
+
+  line-height:2.4;
+
+}
+
+.target{
+
+  position:relative;
+
+  display:inline-block;
+
+  text-decoration:underline;
+
+  margin:0 4px;
+
+  font-family:
+    "Times New Roman",
+    serif;
+
+}
+
+.marker{
+
+  position:absolute;
+
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  top:88%;
+
+  font-size:18px;
+
+  font-weight:600;
+
+  line-height:0;
+
+  font-family:
+    "Times New Roman",
+    serif;
+
+}
+
+.written-line{
+  margin-bottom:10px;
+
+  font-family:
+    "Times New Roman",
+    serif;
+}
+
+.underlined{
+  text-decoration:underline;
+}
+
+.marker-line{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:250px;
+
+  margin:10px 0 20px;
+
+  font-size:22px;
+
+  font-weight:600;
+
+}
+
+/* =========================
+   OPTIONS
+========================= */
+
+.option{
+
+  display:flex;
+  align-items:center;
+
+  gap:15px;
+
+  border:1px solid #d1d5db;
+
+  border-radius:16px;
+
+  padding:14px 18px;
+
+  margin-bottom:14px;
+
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.option:hover{
+  border-color:#4f46e5;
+}
+
+.option.selected{
+
+  border-color:#4f46e5;
+
+  background:
+    rgba(79,70,229,.05);
+}
+
+.option-letter{
+
+  width:36px;
+  height:36px;
+
+  border-radius:12px;
+
+  border:1px solid #cbd5e1;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-family:
+    "Times New Roman",
+    serif;
+
+  font-size:18px;
+
+  font-weight:700;
+
+}
+
+.option-text{
+
+  font-family:
+    "Times New Roman",
+    serif;
+
+  font-size:22px;
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation{
+
+  margin-top:30px;
+
+  display:flex;
+
+  justify-content:space-between;
+}
+
+.nav-btn{
+
+  border:none;
+
+  border-radius:14px;
+
+  padding:14px 24px;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+.secondary{
+  background:#e5e7eb;
+  color:#111827;
+}
+
+.primary{
+  background:#4f46e5;
+  color:white;
+}
+
+.question-divider{
+
+  width:100%;
+
+  height:1px;
+
+  background:#e5e7eb;
+
+  margin:12px 0 6px;
+
+}
+
+.structure-source{
+
+  text-align:right;
+
+  color:#64748b;
+
+  font-size:13px;
+
+  font-style:italic;
+
+  margin-top:8px;
+
+  margin-bottom:12px;
+
+}

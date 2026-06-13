@@ -1,0 +1,172 @@
+*{
+  box-sizing:border-box;
+}
+
+.full-test-page{
+  min-height:calc(100vh - 80px);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:40px;
+
+  background:#f4f6fb;
+}
+
+.hero-card{
+  width:100%;
+  max-width:950px;
+
+  background:#fff;
+
+  border-radius:24px;
+
+  padding:40px;
+
+  text-align:center;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.08);
+}
+
+.hero-icon{
+  font-size:72px;
+  margin-bottom:10px;
+}
+
+.hero-title{
+  font-size:34px;
+  font-weight:700;
+
+  color:#1e40af;
+
+  margin-bottom:10px;
+}
+
+.hero-subtitle{
+  color:#64748b;
+
+  margin-bottom:20px;
+}
+
+.package-badge{
+  display:inline-block;
+
+  background:#dbeafe;
+  color:#1d4ed8;
+
+  padding:10px 20px;
+
+  border-radius:999px;
+
+  font-weight:600;
+
+  margin-bottom:30px;
+}
+
+.section-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:20px;
+
+  margin-bottom:30px;
+}
+
+.section-card{
+  background:#eff6ff;
+
+  border:2px solid #dbeafe;
+
+  border-radius:20px;
+
+  padding:25px;
+}
+
+.section-icon{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.section-card h3{
+  color:#1e3a8a;
+  margin-bottom:10px;
+}
+
+.section-card p{
+  font-size:18px;
+  font-weight:600;
+  color:#0f172a;
+}
+
+.section-card span{
+  color:#64748b;
+}
+
+.summary-box{
+  display:flex;
+
+  justify-content:center;
+
+  gap:80px;
+
+  margin:30px 0;
+}
+
+.summary-item{
+  display:flex;
+  flex-direction:column;
+}
+
+.summary-item strong{
+  font-size:42px;
+  color:#2563eb;
+}
+
+.summary-item span{
+  color:#64748b;
+}
+
+.start-btn{
+  border:none;
+
+  background:#2563eb;
+
+  color:#fff;
+
+  padding:16px 36px;
+
+  border-radius:14px;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.start-btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+  .section-grid{
+    grid-template-columns:1fr;
+  }
+
+  .summary-box{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .hero-card{
+    padding:25px;
+  }
+
+}
